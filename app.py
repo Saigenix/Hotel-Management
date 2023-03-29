@@ -8,7 +8,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///todo.db"
 app.config['SQLALCHEMY_Track_MODIFICATIONS'] = False
 app.secret_key = 'fhgfkhfguvguyi76gvhf' 
 db = SQLAlchemy(app) 
-# TOTAL_ROOMS = 6
 class Room(db.Model):
     sno = db.Column(db.Integer,primary_key=True) 
     checkin= db.Column(db.String(100), nullable=True) 
